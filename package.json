@@ -1,0 +1,26 @@
+{
+  "name": "atlas-framework-snippets",
+  "displayName": "Atlas Framework Snippets",
+  "description": "All the official snippets related to Atlas Framework. This includes the core and all other Atlas resources.",
+  "publisher": "Atlas Framework",
+  "version": "0.0.1",
+  "icon": "./atlas.png",
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "lua",
+        "path": "./snippets/lua_snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtlasFw/vsc-atl.git"
+  }
+}

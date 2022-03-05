@@ -1,0 +1,16 @@
+{
+  "ATL.Export": {
+    "prefix": ["ATL", "get", "exports"],
+    "body": [
+      "ATL = exports['atl-core']:get()"
+    ],
+    "description": "Imports all the atl-core functions into the current namespace (client or server)"
+  },
+  "ATL.Import": {
+    "prefix": ["shared_script", "ATL"],
+    "body": [
+      "shared_script '@atl-core/import.lua'"
+    ],
+    "description": "Imports the ATL object for both the client and server"
+  }
+}
