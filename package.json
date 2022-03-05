@@ -2,7 +2,7 @@
   "name": "atlas-framework-snippets",
   "displayName": "Atlas Framework Snippets",
   "description": "All the official snippets related to Atlas Framework. This includes the core and all other Atlas resources.",
-  "publisher": "Atlas Framework",
+  "publisher": "AtlasFramework",
   "version": "0.0.1",
   "icon": "./atlas.png",
   "engines": {

@@ -1,4 +1,3 @@
-# atlas-framework-snippets README
+# Atlas Framework Snippets
 
-This is the README for your extension "atlas-framework-snippets". You may contribute to this repository by adding more snippets or fixing existing ones.
-You can check https://snippet-generator.app/ for a proper way to create snippets.
+All the official snippets related to Atlas Framework. This includes the core and all other Atlas resources. If you want to contribute to the Atlas Framework, please check out the [official repository](https://github.com/AtlasFw/vsc-atl).
