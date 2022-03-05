@@ -4,7 +4,7 @@
   "description": "All the official snippets related to Atlas Framework. This includes the core and all other Atlas resources.",
   "publisher": "AtlasFramework",
   "version": "0.0.1",
-  "icon": "./atlas.png",
+  "icon": "atlas.png",
   "license": "GNU General Public License v3.0",
   "engines": {
     "vscode": "^1.65.0"
