@@ -7,14 +7,14 @@
     "description": "Imports all the atl-core functions into the current namespace (client or server)"
   },
   "ATL.Import": {
-    "prefix": ["shared_script", "ATL"],
+    "prefix": ["shared_script"],
     "body": [
       "shared_script '@atl-core/import.lua'"
     ],
     "description": "Imports the ATL object for both the client and server"
   },
   "ATL.RegisterCommand": {
-    "prefix": ["RegisterCommand", "Command", "ATL"],
+    "prefix": ["Command", "ATL.RegisterCommand"],
     "body": [
         "ATL.RegisterCommand('${1:commandName}', '${2:suggestionLabel}', '${3:playerGroup}', function(player, args)",
         "   ${6:code}",
@@ -25,58 +25,58 @@
     "description": "Register a command in server-side"
   },
   "ATL.AddAccountMoney": {
-    "prefix": ["AddAccountMoney", "ATL"],
+    "prefix": ["AddAccountMoney", "ATL.AddAccountMoney"],
     "body": [
-        "ATL.AddAccountMoney(${1:player}, ${2:account}, ${3:quantity})"
+        "ATL.AddAccountMoney(${1:playerId}, ${2:account}, ${3:quantity})"
     ],
     "description": "Add money from the selected account to the selected player"
   },
   "ATL.RemoveAccountMoney": {
-    "prefix": ["RemoveAccountMoney", "ATL"],
+    "prefix": ["RemoveAccountMoney", "ATL.RemoveAccountMoney"],
     "body": [
-      "ATL.RemoveAccountMoney(${1:player}, ${2:account}, ${3:quantity})"
+      "ATL.RemoveAccountMoney(${1:playerId}, ${2:account}, ${3:quantity})"
     ],
     "description": "Remove money from the selected account to the selected player"
   },
   "ATL.SetGroup": {
-    "prefix": ["SetGroup", "ATL"],
+    "prefix": ["SetGroup", "ATL.SetGroup"],
     "body": [
       "ATL.SetGroup(${1:playerId}, ${2:group})"
     ],
     "description": "Set the staff group to a user"
   },
   "ATL.GetGroup": {
-    "prefix": ["GetGroup", "ATL"],
+    "prefix": ["GetGroup", "ATL.GetGroup"],
     "body": [
-      "ATL.GetGroup(${1:player})"
+      "ATL.GetGroup(${1:playerId})"
     ],
     "description": "Detect the group of a user"
   },
   "ATL.GetSlots": {
-    "prefix": ["GetSlots", "ATL"],
+    "prefix": ["GetSlots", "ATL.GetSlots"],
     "body": [
-      "ATL.GetSlots(${1:player})"
+      "ATL.GetSlots(${1:playerId})"
     ],
     "description": "Returns the total slots of the player"
   },
   "ATL.GetCharacterName": {
-    "prefix": ["GetCharacterName", "ATL"],
+    "prefix": ["GetCharacterName", "ATL.GetCharacterName"],
     "body": [
-      "ATL.GetCharacterName(${1:player})"
+      "ATL.GetCharacterName(${1:playerId})"
     ],
     "description": "Returns the player's character name"
   },
   "ATL.GetCharacterId": {
-    "prefix": ["GetCharacterId", "ATL"],
+    "prefix": ["GetCharacterId", "ATL.GetCharacterId"],
     "body": [
-      "ATL.GetCharacterId(${1:player})"
+      "ATL.GetCharacterId(${1:playerId})"
     ],
     "description": "Returns the char_id of the player"
   },
   "ATL.GetAccount": {
-    "prefix": ["GetAccount", "ATL"],
+    "prefix": ["GetAccount", "ATL.GetAccount"],
     "body": [
-      "ATL.GetAccount(${1:player}, ${2:account})"
+      "ATL.GetAccount(${1:playerId}, ${2:account})"
     ],
     "description": "Returns the money in the account"
   }
