@@ -12,5 +12,72 @@
       "shared_script '@atl-core/import.lua'"
     ],
     "description": "Imports the ATL object for both the client and server"
+  },
+  "ATL.RegisterCommand": {
+    "prefix": ["RegisterCommand", "Command", "ATL"],
+    "body": [
+        "ATL.RegisterCommand('${1:commandName}', '${2:suggestionLabel}', '${3:playerGroup}', function(player, args)",
+        "   ${6:code}",
+        "end, {",
+        "    { name='${4:suggestionName}', help='${5:suggestionHelp}' }",
+        "}, false)"
+    ],
+    "description": "Register a command in server-side"
+  },
+  "ATL.AddAccountMoney": {
+    "prefix": ["AddAccountMoney", "ATL"],
+    "body": [
+        "ATL.AddAccountMoney(${1:player}, ${2:account}, ${3:quantity})"
+    ],
+    "description": "Add money from the selected account to the selected player"
+  },
+  "ATL.RemoveAccountMoney": {
+    "prefix": ["RemoveAccountMoney", "ATL"],
+    "body": [
+      "ATL.RemoveAccountMoney(${1:player}, ${2:account}, ${3:quantity})"
+    ],
+    "description": "Remove money from the selected account to the selected player"
+  },
+  "ATL.SetGroup": {
+    "prefix": ["SetGroup", "ATL"],
+    "body": [
+      "ATL.SetGroup(${1:playerId}, ${2:group})"
+    ],
+    "description": "Set the staff group to a user"
+  },
+  "ATL.GetGroup": {
+    "prefix": ["GetGroup", "ATL"],
+    "body": [
+      "ATL.GetGroup(${1:player})"
+    ],
+    "description": "Detect the group of a user"
+  },
+  "ATL.GetSlots": {
+    "prefix": ["GetSlots", "ATL"],
+    "body": [
+      "ATL.GetSlots(${1:player})"
+    ],
+    "description": "Returns the total slots of the player"
+  },
+  "ATL.GetCharacterName": {
+    "prefix": ["GetCharacterName", "ATL"],
+    "body": [
+      "ATL.GetCharacterName(${1:player})"
+    ],
+    "description": "Returns the player's character name"
+  },
+  "ATL.GetCharacterId": {
+    "prefix": ["GetCharacterId", "ATL"],
+    "body": [
+      "ATL.GetCharacterId(${1:player})"
+    ],
+    "description": "Returns the char_id of the player"
+  },
+  "ATL.GetAccount": {
+    "prefix": ["GetAccount", "ATL"],
+    "body": [
+      "ATL.GetAccount(${1:player}, ${2:account})"
+    ],
+    "description": "Returns the money in the account"
   }
 }

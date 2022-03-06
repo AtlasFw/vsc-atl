@@ -3,7 +3,7 @@
   "displayName": "Atlas Framework Snippets",
   "description": "All the official snippets related to Atlas Framework. This includes the core and all other Atlas resources.",
   "publisher": "AtlasFramework",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "atlas.png",
   "license": "GNU General Public License v3.0",
   "engines": {
