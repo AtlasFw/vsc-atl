@@ -11,7 +11,7 @@ This [VS Code](https://code.visualstudio.com/) extension adds snippets from atl-
 If you need further help, you can take a look at our awesome [documentation](https://atlasfw.live/documentation) made with docsify.
 
 ## How to Use
-Currently, we only have Lua support which includes both client and server functions with an additional support for importing from your fxmanifest. To start, just type `ATL` or even the name of the function such as `RemoveAccountMoney`. Once you are hovering over your desired function, you can press `Tab` to autocomplete the function. You will see that your caret is now on one of the parameters, you can press `Tab` again to move to the next one. This can be done with all the parameters and will only be canceled if you select something else with your mouse cursor.
+Currently, we only have Lua support which includes both client and server functions with an additional support for importing from your fxmanifest. To start, just type `ATL` or even the name of the function such as `RemoveAccountMoney` or `ATL.RemoveAccountMoney` (these also autocomplete). Once you are hovering over your desired function, you can press `Tab` to autocomplete the function. You will see that your caret is now on one of the parameters, you can press `Tab` again to move to the next one. This can be done with all the parameters and will only be canceled if you select something else with your mouse cursor.
 
 ## Issues
 Any issues regarding snippets or missing arguments are to be reported on [GitHub Issues](https://github.com/AtlasFw/vsc-atl/issues).
