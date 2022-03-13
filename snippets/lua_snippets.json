@@ -1,83 +1,43 @@
 {
-  "ATL.Export": {
-    "prefix": ["ATL", "get", "exports"],
-    "body": [
-      "ATL = exports['atl-core']:get()"
-    ],
-    "description": "Imports all the atl-core functions into the current namespace (client or server)"
-  },
   "ATL.Import": {
-    "prefix": ["shared_script"],
+    "prefix": ["ATL.Import", "shared_script", "import"],
     "body": [
-      "shared_script '@atl-core/import.lua'"
+      "shared_scripts {",
+      "  '@atl-core/import.lua'",
+      "}"
     ],
     "description": "Imports the ATL object for both the client and server"
   },
   "ATL.RegisterCommand": {
-    "prefix": ["Command", "ATL.RegisterCommand"],
+    "prefix": ["ATL.RegisterCommand", "command"],
     "body": [
-        "ATL.RegisterCommand('${1:commandName}', '${2:suggestionLabel}', '${3:playerGroup}', function(player, args)",
-        "   ${6:code}",
-        "end, {",
-        "    { name='${4:suggestionName}', help='${5:suggestionHelp}' }",
-        "}, false)"
+      "ATL.RegisterCommand('${1:commandName}', '${2:commandDescription}', '${3:playerGroup}', function(player, args)",
+      "  --Code",
+      "end, {'${4:type}-${5:name}'}, {",
+      "  { name = ${6:suggestionName}, help = ${7:suggestionHelp} }",
+      "})"
     ],
     "description": "Register a command in server-side"
   },
-  "ATL.AddAccountMoney": {
-    "prefix": ["AddAccountMoney", "ATL.AddAccountMoney"],
+  "ATL.GetLicense": {
+    "prefix": ["ATL.GetLicense", "license"],
     "body": [
-        "ATL.AddAccountMoney(${1:playerId}, ${2:account}, ${3:quantity})"
+      "ATL.GetLicense(${1:source})"
     ],
-    "description": "Add money from the selected account to the selected player"
+    "description": "Returns the license of the user"
   },
-  "ATL.RemoveAccountMoney": {
-    "prefix": ["RemoveAccountMoney", "ATL.RemoveAccountMoney"],
+  "ATL.GetPassengers": {
+    "prefix": "ATL.GetPassengers",
     "body": [
-      "ATL.RemoveAccountMoney(${1:playerId}, ${2:account}, ${3:quantity})"
+      "ATL.GetPassengers(${1:ped}, ${2:vehicle})"
     ],
-    "description": "Remove money from the selected account to the selected player"
+    "description": "Returns the peds the seats of a vehicle"
   },
-  "ATL.SetGroup": {
-    "prefix": ["SetGroup", "ATL.SetGroup"],
+  "ATL.SendLog": {
+    "prefix": ["ATL.SendLog", "log"],
     "body": [
-      "ATL.SetGroup(${1:playerId}, ${2:group})"
+      "ATL.SendLog(${1:tag}, ${2:message})"
     ],
-    "description": "Set the staff group to a user"
-  },
-  "ATL.GetGroup": {
-    "prefix": ["GetGroup", "ATL.GetGroup"],
-    "body": [
-      "ATL.GetGroup(${1:playerId})"
-    ],
-    "description": "Detect the group of a user"
-  },
-  "ATL.GetSlots": {
-    "prefix": ["GetSlots", "ATL.GetSlots"],
-    "body": [
-      "ATL.GetSlots(${1:playerId})"
-    ],
-    "description": "Returns the total slots of the player"
-  },
-  "ATL.GetCharacterName": {
-    "prefix": ["GetCharacterName", "ATL.GetCharacterName"],
-    "body": [
-      "ATL.GetCharacterName(${1:playerId})"
-    ],
-    "description": "Returns the player's character name"
-  },
-  "ATL.GetCharacterId": {
-    "prefix": ["GetCharacterId", "ATL.GetCharacterId"],
-    "body": [
-      "ATL.GetCharacterId(${1:playerId})"
-    ],
-    "description": "Returns the char_id of the player"
-  },
-  "ATL.GetAccount": {
-    "prefix": ["GetAccount", "ATL.GetAccount"],
-    "body": [
-      "ATL.GetAccount(${1:playerId}, ${2:account})"
-    ],
-    "description": "Returns the money in the account"
+    "description": "Sends a log to your DataDog account"
   }
 }
