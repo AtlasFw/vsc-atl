@@ -95,5 +95,12 @@
       "ATL.DeleteEntity(${1:networkId}, ${3:callbackFunction})"
     ],
     "description": "Deletes an entity from its network id"
+  },
+  "ATL.GetPlayer ": {
+    "prefix": ["ATL.GetPlayer", "GetPlayer"],
+    "body": [
+      "ATL.GetPlayer(${1:playerId})"
+    ],
+    "description": "Gets the player from the core by the player id"
   }
 }
