@@ -31,7 +31,7 @@
     "body": [
       "ATL.GetPassengers(${1:ped}, ${2:vehicle})"
     ],
-    "description": "Returns the peds the seats of a vehicle"
+    "description": "Returns the peds in the seats of a vehicle"
   },
   "ATL.SendLog": {
     "prefix": ["ATL.SendLog", "log"],
@@ -39,5 +39,61 @@
       "ATL.SendLog(${1:tag}, ${2:message})"
     ],
     "description": "Sends a log to your DataDog account"
+  },
+  "ATL.RegisterServerCallback": {
+    "prefix": ["ATL.RegisterServerCallback ", "RegisterServerCallback"],
+    "body": [
+      "ATL.RegisterServerCallback('${1:name}', ${2:callbackFunction})"
+    ],
+    "description": "Register a callback function server-side"
+  },
+  "ATL.TriggerServerCallback": {
+    "prefix": ["ATL.TriggerServerCallback ", "TriggerServerCallback"],
+    "body": [
+      "ATL.TriggerServerCallback('${1:name}', ${2:callbackFunction}, ${3:...})"
+    ],
+    "description": "Trigger a callback function that was registered server-side"
+  },
+  "ATL.GetEntities": {
+    "prefix": ["ATL.GetEntities", "GetEntities"],
+    "body": [
+      "ATL.GetEntities(${1:coords}, ${2:entities}, ${3:distance})"
+    ],
+    "description": "Returns all entities in a specified radius of a passed position"
+  },
+  "ATL.GetVehicles": {
+    "prefix": ["ATL.GetVehicles", "GetVehicles"],
+    "body": [
+      "ATL.GetVehicles(${1:coords}, ${2:distance})"
+    ],
+    "description": "Returns all vehicles in a specified radius of a passed position"
+  },
+  "ATL.CreateVehicle": {
+    "prefix": ["ATL.CreateVehicle", "CreateVehicle"],
+    "body": [
+      "ATL.CreateVehicle(${1:vehicleModel}, ${2:coords}, ${3:callbackFunction})"
+    ],
+    "description": "Creates a server-side vehicle in specified coords"
+  },
+  "ATL.CreatePed": {
+    "prefix": ["ATL.CreatePed", "CreatePed"],
+    "body": [
+      "ATL.CreatePed(${1:pedModel}, ${2:coords}, ${3:callbackFunction})"
+    ],
+    "description": "Creates a ped entity in specified coords"
+  },
+  "ATL.CreateObject": {
+    "prefix": ["ATL.CreateObject", "CreateObject"],
+    "body": [
+      "ATL.CreateObject(${1:objectModel}, ${2:coords}, ${3:callbackFunction})"
+    ],
+    "description": "Creates an object entity in specified coords"
+  },
+  "ATL.DeleteEntity ": {
+    "prefix": ["ATL.DeleteEntity", "DeleteEntity"],
+    "body": [
+      "ATL.DeleteEntity(${1:networkId}, ${3:callbackFunction})"
+    ],
+    "description": "Deletes an entity from its network id"
   }
 }
