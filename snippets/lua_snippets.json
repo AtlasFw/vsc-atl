@@ -92,7 +92,7 @@
   "ATL.DeleteEntity": {
     "prefix": ["ATL.DeleteEntity", "DeleteEntity"],
     "body": [
-      "ATL.DeleteEntity(${1:networkId}, ${3:callbackFunction})"
+      "ATL.DeleteEntity(${1:networkId}, ${2:callbackFunction})"
     ],
     "description": "Deletes an entity from its network id"
   },
@@ -109,5 +109,124 @@
       "player.getCharId()"
     ],
     "description": "Returns the current character id of the player"
+  },
+  "player.getSlots": {
+    "prefix": ["player.getSlots", "getSlots"],
+    "body": [
+      "player.getSlots()"
+    ],
+    "description": ""
+  },
+  "player.getCharName": {
+    "prefix": ["player.getCharName", "getCharName"],
+    "body": [
+      "player.getCharName()"
+    ],
+    "description": ""
+  },
+  "player.getGroup": {
+    "prefix": ["player.getGroup", "getGroup"],
+    "body": [
+      "player.getGroup()"
+    ],
+    "description": ""
+  },
+  "player.hasPerms": {
+    "prefix": ["player.hasPerms", "hasPerms"],
+    "body": [
+      "player.hasPerms(${1:groupName})"
+    ],
+    "description": ""
+  },
+  "player.getJobLabel": {
+    "prefix": ["player.getJobLabel", "getJobLabel"],
+    "body": [
+      "player.getJobLabel()"
+    ],
+    "description": ""
+  },
+  "player.getRankLabel": {
+    "prefix": ["player.getRankLabel", "getRankLabel"],
+    "body": [
+      "player.getRankLabel()"
+    ],
+    "description": ""
+  },
+  "player.getDuty": {
+    "prefix": ["player.getDuty", "getDuty"],
+    "body": [
+      "player.getDuty()"
+    ],
+    "description": ""
+  },
+  "player.getAccount": {
+    "prefix": ["player.getAccount", "getAccount"],
+    "body": [
+      "player.getAccount(${1:accountName})"
+    ],
+    "description": ""
+  },
+  "player.getStatus": {
+    "prefix": ["player.getStatus", "getStatus"],
+    "body": [
+      "player.getStatus(${1:statusName})"
+    ],
+    "description": ""
+  },
+  "player.setCoords": {
+    "prefix": ["player.setCoords", "setCoords"],
+    "body": [
+      "player.setCoords(${1:coords}, ${2:teleportBool})"
+    ],
+    "description": ""
+  },
+  "player.setSlots": {
+    "prefix": ["player.setSlots", "setSlots"],
+    "body": [
+      "player.setSlots(${1:amount})"
+    ],
+    "description": ""
+  },
+  "player.setGroup": {
+    "prefix": ["player.setGroup", "setGroup"],
+    "body": [
+      "player.setGroup(${1:groupName})"
+    ],
+    "description": ""
+  },
+  "player.setJob": {
+    "prefix": ["player.setJob", "setJob"],
+    "body": [
+      "player.setJob(${1:jobName}, ${2:rankLevel})"
+    ],
+    "description": ""
+  },
+  "player.setDuty": {
+    "prefix": ["player.setDuty", "setDuty"],
+    "body": [
+      "player.setDuty(${1:bool})"
+    ],
+    "description": ""
+  },
+  "player.addAccountMoney": {
+    "prefix": ["player.addAccountMoney", "addAccountMoney"],
+    "body": [
+      "player.addAccountMoney(${1:accountName}, ${2:quantity})"
+    ],
+    "description": ""
+  },
+  "player.removeAccountMoney": {
+    "prefix": ["player.removeAccountMoney", "removeAccountMoney"],
+    "body": [
+      "player.removeAccountMoney(${1:accountName}, ${2:quantity})"
+    ],
+    "description": ""
+  },
+  "player.setStatus": {
+    "prefix": ["player.setStatus", "setStatus"],
+    "body": [
+      "player.setStatus(${1:statusData})"
+    ],
+    "description": ""
   }
 }
