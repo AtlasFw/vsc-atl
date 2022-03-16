@@ -103,8 +103,8 @@
     ],
     "description": "Gets the player from the core by the player id"
   },
-  "ATL.getCharId": {
-    "prefix": ["ATL.getCharId", "getCharId"],
+  "player.getCharId": {
+    "prefix": ["player.getCharId", "getCharId"],
     "body": [
       "player.getCharId()"
     ],
