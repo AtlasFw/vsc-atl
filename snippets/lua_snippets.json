@@ -109,5 +109,5 @@
       "player.getCharId()"
     ],
     "description": "Returns the current character id of the player"
-  },
+  }
 }
