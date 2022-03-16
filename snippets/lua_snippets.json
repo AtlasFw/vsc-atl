@@ -89,18 +89,25 @@
     ],
     "description": "Creates an object entity in specified coords"
   },
-  "ATL.DeleteEntity ": {
+  "ATL.DeleteEntity": {
     "prefix": ["ATL.DeleteEntity", "DeleteEntity"],
     "body": [
       "ATL.DeleteEntity(${1:networkId}, ${3:callbackFunction})"
     ],
     "description": "Deletes an entity from its network id"
   },
-  "ATL.GetPlayer ": {
+  "ATL.GetPlayer": {
     "prefix": ["ATL.GetPlayer", "GetPlayer"],
     "body": [
-      "ATL.GetPlayer(${1:playerId})"
+      "local player = ATL.GetPlayer(${1:playerId})"
     ],
     "description": "Gets the player from the core by the player id"
-  }
+  },
+  "ATL.getCharId": {
+    "prefix": ["ATL.getCharId", "getCharId"],
+    "body": [
+      "player.getCharId()"
+    ],
+    "description": "Returns the current character id of the player"
+  },
 }
