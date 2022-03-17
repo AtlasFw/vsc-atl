@@ -115,118 +115,118 @@
     "body": [
       "player.getSlots()"
     ],
-    "description": ""
+    "description": "Returns the current character slots of the player"
   },
   "player.getCharName": {
     "prefix": ["player.getCharName", "getCharName"],
     "body": [
       "player.getCharName()"
     ],
-    "description": ""
+    "description": "Returns the current character name of the player(.firstname and .lastname available)"
   },
   "player.getGroup": {
     "prefix": ["player.getGroup", "getGroup"],
     "body": [
       "player.getGroup()"
     ],
-    "description": ""
+    "description": "Returns the current group of the player"
   },
   "player.hasPerms": {
     "prefix": ["player.hasPerms", "hasPerms"],
     "body": [
       "player.hasPerms(${1:groupName})"
     ],
-    "description": ""
+    "description": "Returns if the player has the specified group or higher"
   },
   "player.getJobLabel": {
     "prefix": ["player.getJobLabel", "getJobLabel"],
     "body": [
       "player.getJobLabel()"
     ],
-    "description": ""
+    "description": "Returns the job label of the player"
   },
   "player.getRankLabel": {
     "prefix": ["player.getRankLabel", "getRankLabel"],
     "body": [
       "player.getRankLabel()"
     ],
-    "description": ""
+    "description": "Returns the label of the player's job rank"
   },
   "player.getDuty": {
     "prefix": ["player.getDuty", "getDuty"],
     "body": [
       "player.getDuty()"
     ],
-    "description": ""
+    "description": "Returns the current duty of the player (true/false)"
   },
   "player.getAccount": {
     "prefix": ["player.getAccount", "getAccount"],
     "body": [
       "player.getAccount(${1:accountName})"
     ],
-    "description": ""
+    "description": "Returns the current money from the passed account name"
   },
   "player.getStatus": {
     "prefix": ["player.getStatus", "getStatus"],
     "body": [
       "player.getStatus(${1:statusName})"
     ],
-    "description": ""
+    "description": "Returns the current passed status of the player"
   },
   "player.setCoords": {
     "prefix": ["player.setCoords", "setCoords"],
     "body": [
       "player.setCoords(${1:coords}, ${2:teleportBool})"
     ],
-    "description": ""
+    "description": "Sets the player coords + optionally teleports him"
   },
   "player.setSlots": {
     "prefix": ["player.setSlots", "setSlots"],
     "body": [
       "player.setSlots(${1:amount})"
     ],
-    "description": ""
+    "description": "Set the amount of character slots the player has"
   },
   "player.setGroup": {
     "prefix": ["player.setGroup", "setGroup"],
     "body": [
       "player.setGroup(${1:groupName})"
     ],
-    "description": ""
+    "description": "Set the group of the player"
   },
   "player.setJob": {
     "prefix": ["player.setJob", "setJob"],
     "body": [
       "player.setJob(${1:jobName}, ${2:rankLevel})"
     ],
-    "description": ""
+    "description": "Set the job and grade of the player"
   },
   "player.setDuty": {
     "prefix": ["player.setDuty", "setDuty"],
     "body": [
       "player.setDuty(${1:bool})"
     ],
-    "description": ""
+    "description": "Sets the player on duty or off duty"
   },
   "player.addAccountMoney": {
     "prefix": ["player.addAccountMoney", "addAccountMoney"],
     "body": [
       "player.addAccountMoney(${1:accountName}, ${2:quantity})"
     ],
-    "description": ""
+    "description": "Removes money from the player's account"
   },
   "player.removeAccountMoney": {
     "prefix": ["player.removeAccountMoney", "removeAccountMoney"],
     "body": [
       "player.removeAccountMoney(${1:accountName}, ${2:quantity})"
     ],
-    "description": ""
+    "description": "Removes money from the specified account"
   },
   "player.setStatus": {
     "prefix": ["player.setStatus", "setStatus"],
     "body": [
       "player.setStatus(${1:statusData})"
     ],
-    "description": ""
+    "description": "Sets the status of the player to the table passed"
   }
 }

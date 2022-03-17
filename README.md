@@ -1,7 +1,7 @@
 # Atlas Framework Snippets
+Official Atlas Framework Snippets created by Atlas Development Team.
 
 ## Introduction
-
 All official snippets related to Atlas Framework. This includes the core and all other Atlas resources. This extension will be constantly updated by adding new core functions, events, and more. Don't forget that you can give us a hand in the official [GitHub Repository](https://github.com/AtlasFw/vsc-atl) or by writing a [review](https://marketplace.visualstudio.com/items?itemName=AtlasFramework.atlas-framework-snippets&ssr=false#review-details).
 
 ## Installation
@@ -12,6 +12,14 @@ If you need further help, you can take a look at our awesome [documentation](htt
 
 ## How to Use
 Currently, we only have Lua support which includes both client and server functions with an additional support for importing from your fxmanifest. To start, just type `ATL` or even the name of the function such as `RemoveAccountMoney` or `ATL.RemoveAccountMoney` (these also autocomplete). Once you are hovering over your desired function, you can press `Tab` to autocomplete the function. You will see that your caret is now on one of the parameters, you can press `Tab` again to move to the next one. This can be done with all the parameters and will only be canceled if you select something else with your mouse cursor.
+
+Player methods have `player` instead of `ATL`. This is because you require the player in order to execute the methods. You can use `ATL.GetPlayer(player)` to get the player object.
+
+```lua
+--Both lines are provided by extension.
+local player = ATL.GetPlayer(player)
+player.getSlots()
+```
 
 ## Issues
 Any issues regarding snippets or missing arguments are to be reported on [GitHub Issues](https://github.com/AtlasFw/vsc-atl/issues).
